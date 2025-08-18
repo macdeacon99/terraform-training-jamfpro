@@ -52,7 +52,8 @@ In this exercise, you are going to create more sites without instruction. It is 
 
 Network Segments in Jamf are used to limit scoping to a specific subnet of a network. A network segment resource can be created using the following format:
 
-`resource "jamfpro_network_segment" "jamfpro_network_segment_001" {
+```
+resource "jamfpro_network_segment" "jamfpro_network_segment_001" {
   name                 = "Example Network Segment"
   starting_address     = "10.16.123.0"
   ending_address       = "10.16.123.254"
@@ -64,4 +65,5 @@ Network Segments in Jamf are used to limit scoping to a specific subnet of a net
   department           = "IT Department"
   override_buildings   = false
   override_departments = false
-}`
+}
+```
