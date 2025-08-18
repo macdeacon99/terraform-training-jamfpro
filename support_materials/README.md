@@ -6,7 +6,7 @@ How you set up your environment and utilise the Terraform provider will not be c
 
 In this section we are going to discuss basic configurations of a Jamf Pro server. The Jamf Pro Terraform Provider can configure all parts of the Jamf Pro tenant, in this section we are going to cover the following objects:
 
-- Sites
+- [Sites](https://github.com/macdeacon99/terraform-training-jamfpro/tree/doc-updating/support_materials#sites)
 - Network Segments
 - Configuring Self Service
 - Deploying a Health Check Policy
