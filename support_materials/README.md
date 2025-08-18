@@ -18,9 +18,11 @@ For more information on any of the resources we are going to create today, you c
 Sites are used in Jamf Pro to organise and seperate object functionality into specific areas for easier management.
 A site can be created in Terraform using the following resource:
 
-`resource "jamfpro_site" "jamf_pro_site_1" {
+```
+resource "jamfpro_site" "jamf_pro_site_1" {
     name = "gd-training-london"
-}`
+}
+```
 
 This resource will create a 'jamfpro_site' with the unique identifier 'jamf_pro_site_1'. As a site in Jamf only requires one attribute, a name. The only attribute we are required to enter here is the name, which in this case is 'gd-training-london'.
 
@@ -67,3 +69,20 @@ resource "jamfpro_network_segment" "jamfpro_network_segment_001" {
   override_departments = false
 }
 ```
+
+This resource will create a 'jamfpro_network_segment' with the unique identifier 'jamfpro_network_segment_001'. The network segment has multiple attributes that require configuring. You can see more details on the full requirements on the registry page below. The main requirements are name, starting address and ending address.
+
+Once you apply this run, the network segment will be created in the linked Jamf Pro tenant.
+
+You can see more about network segments on this [Terraform Registry](https://registry.terraform.io/providers/deploymenttheory/jamfpro/latest/docs/resources/network_segment) webpage.
+
+### Network Segments - Exercise 1 - Creeating a Network Segment
+
+In this exercise, you will create a network segment and push the change to your Jamf Pro server.
+
+Follow these steps to create the network segment:
+
+1. Create a new file in your project in the `/workload/terraform/jamfpro/` directory and name it `network_segments.tf`
+2. Add in the network segment resource mentioned above and create a network segment. You can fill in the attributes with any IP range and give it a name. Following the schema, the only required fields are name, starting address and ending address, only use these fields.
+3. Save the file
+4. Run your terraform and create the network segment by running the `terraform apply` command in the terminal in the `/workload/terraform/jamfpro` directory
