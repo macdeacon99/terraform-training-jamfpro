@@ -28,13 +28,40 @@ Once you apply this run, the site will be created in the linked Jamf Pro tenant.
 
 You can see more about Sites on this [Terraform Registry](https://registry.terraform.io/providers/deploymenttheory/jamfpro/latest/docs/resources/site) webpage
 
-### Sites - Exercise 1 - Using Sites
+### Sites - Exercise 1 - Creating a Site
 
 In this exercise, you will create the above site within your terraform project and push the change to your Jamf Pro instance.
 
 Follow these steps:
 
-1. Create a new file in your project in the `'/workload/terraform/jamfpro/'` directory and name it `sites.tf`
+1. Create a new file in your project in the `/workload/terraform/jamfpro/` directory and name it `sites.tf`
 2. Add in the site resource mentioned above and create a site. You can change the name attribute to anything you would like.
 3. Save the file
 4. Run your terraform and create the site by running the `terraform apply` command in the terminal in the `/workload/terraform/jamfpro` directory
+
+### Sites - Exercise 2 - Creating more Sites
+
+In this exercise, you are going to create more sites without instruction. It is worth noting here, you do not need to create a file for each site, you can create multiple resources in one terraform file. Following the steps above (excluding the file creation) and the resources provided, create 4 more sites as follows:
+
+1. Create a site for Manchester
+2. Create a site for Glasgow
+3. Create a site for California
+4. Create a site for Texas
+
+## Network Segments
+
+Network Segments in Jamf are used to limit scoping to a specific subnet of a network. A network segment resource can be created using the following format:
+
+`resource "jamfpro_network_segment" "jamfpro_network_segment_001" {
+  name                 = "Example Network Segment"
+  starting_address     = "10.16.123.0"
+  ending_address       = "10.16.123.254"
+  distribution_server  = "Example Distribution Server"
+  distribution_point   = "Example Distribution Point"
+  url                  = "http://example.com"
+  swu_server           = "Example SWU Server"
+  building             = "Main Building"
+  department           = "IT Department"
+  override_buildings   = false
+  override_departments = false
+}`
