@@ -27,3 +27,14 @@ This resource will create a 'jamfpro_site' with the unique identifier 'jamf_pro_
 Once you apply this run, the site will be created in the linked Jamf Pro tenant.
 
 You can see more about Sites on this [Terraform Registry](https://registry.terraform.io/providers/deploymenttheory/jamfpro/latest/docs/resources/site) webpage
+
+### Sites - Exercise 1 - Using Sites
+
+In this exercise, you will create the above site within your terraform project and push the change to your Jamf Pro instance.
+
+Follow these steps:
+
+1. Create a new file in your project in the `'/workload/terraform/jamfpro/'` directory and name it `sites.tf`
+2. Add in the site resource mentioned above and create a site. You can change the name attribute to anything you would like.
+3. Save the file
+4. Run your terraform and create the site by running the `terraform apply` command in the terminal in the `/workload/terraform/jamfpro` directory
