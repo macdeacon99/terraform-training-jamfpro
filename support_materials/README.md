@@ -10,8 +10,8 @@ In this lesson we are going to discuss basic configuration of a Jamf Pro server.
 
 - [Sites](https://github.com/macdeacon99/terraform-training-jamfpro/tree/doc-updating/support_materials#sites)
 - [Network Segments](https://github.com/macdeacon99/terraform-training-jamfpro/tree/doc-updating/support_materials#network-segments)
-- [Configuring Self Service]()
-- [Deploying a Health Check Policy]()
+- [Configuring Self Service](https://github.com/macdeacon99/terraform-training-jamfpro/tree/doc-updating/support_materials#configuring-self-service)
+- [Deploying a Health Check Policy](https://github.com/macdeacon99/terraform-training-jamfpro/tree/doc-updating/support_materials#deploying-a-health-check-policy)
 
 For more information on any of the resources we are going to create today, you can see the full breakdown from the schema on the [Terrafrom Registry](https://registry.terraform.io/providers/deploymenttheory/jamfpro/latest/docs/resources) webpage.
 
