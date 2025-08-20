@@ -10,8 +10,8 @@ In this lesson we are going to discuss basic configuration of a Jamf Pro server.
 
 - [Sites](https://github.com/macdeacon99/terraform-training-jamfpro/tree/doc-updating/support_materials#sites)
 - [Network Segments](https://github.com/macdeacon99/terraform-training-jamfpro/tree/doc-updating/support_materials#network-segments)
-- [Configuring Self Service]
-- [Deploying a Health Check Policy]
+- [Configuring Self Service]()
+- [Deploying a Health Check Policy]()
 
 For more information on any of the resources we are going to create today, you can see the full breakdown from the schema on the [Terrafrom Registry](https://registry.terraform.io/providers/deploymenttheory/jamfpro/latest/docs/resources) webpage.
 
@@ -89,7 +89,7 @@ Follow these steps to create the network segment:
 3. Save the file
 4. Run your terraform and create the network segment by running the `terraform apply` command in the terminal in the `/workload/terraform/jamfpro` directory
 
-### Self Service Customisation
+### Configuring Self Service
 
 Self Service Customisation in Jamf will allow you to modify how your Self Service application looks and feels. The Self Service Application can be customised using the following resource:
 
@@ -115,7 +115,7 @@ Once you apply this run, the Self Service Configurations will be configured in t
 
 You can see more about network segments on this [Terraform Registry](https://registry.terraform.io/providers/deploymenttheory/jamfpro/latest/docs/resources/self_service_settings) webpage.
 
-#### Self Service Customisation - Exercise 1 - Customising Self Service
+#### Configuring Self Service - Exercise 1 - Customising Self Service
 
 In this exercise, you will customise the Self Service application to your liking for your organisation.
 
@@ -126,7 +126,7 @@ Follow the steps below to customise the Self Service Application:
 3. Save the file
 4. Run your terraform and customise self service by running the `terraform apply` command in the terminal in the `/workload/terraform/jamfpro` directory
 
-### Deploying a Health Check
+### Deploying a Health Check Policy
 
 Deploying a Health Check in Jamf can be useful to determine if the tenant is online. This section will describe the process of creating a script and a policy resource that will be deployed to check the status of the Jamf Pro tenant.
 
@@ -231,7 +231,7 @@ Once you apply this run, the policy will be created in the linked Jamf Pro tenan
 
 You can see more about policies on the policy [Terraform Registry](https://registry.terraform.io/providers/deploymenttheory/jamfpro/latest/docs/resources/policy) webpage.
 
-#### Health Check - Exercise 1 - Deploying a Health Check in Self Service
+#### Deploying a Health Check Policy - Exercise 1
 
 In this exercise, you will create the resources above and deploy the script to Self Service.
 
