@@ -1,5 +1,13 @@
-# Section 1 - Configuration
+# Introduction - Still in Development
 
-This guide presumes that you have basic knowledge of Terraform, understand the structure of a Terraform resource and already have the Terraform provider installed and integrated to a Jamf Pro tenant.
+This tutorial will walk you through using the Jamf Pro Terraform Provider created by Deployment Theory.
 
-How you set up your environment and utilise the Terraform provider will not be covered in this guide. This guide will focus on learning how to use the Jamf Pro Terraform Provider by giving examples and exercises to build your knowledge on the specific Jamf Pro resources.
+You can find the Terraform Provider on the [Deployment Theory](https://github.com/deploymenttheory/terraform-provider-jamfpro) GitHub page.
+
+The tutorial will walk you through setting up a Jamf Pro instance and managing objects within Jamf Pro. Here is an overview of the tutorial:
+
+1. [Section 1 - Configuration]()
+2. Section 2 - Management
+3. Section 3 - Automation
+4. Section 4 - Deployment
+5. Section 5 - Course Review
