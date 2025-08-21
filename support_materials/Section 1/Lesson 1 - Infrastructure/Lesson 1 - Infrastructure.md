@@ -2,10 +2,10 @@
 
 In this lesson we are going to discuss basic configuration of a Jamf Pro server. The Jamf Pro Terraform Provider can configure all parts of the Jamf Pro tenant, in this section we are going to cover the following objects:
 
-- [Sites](https://github.com/macdeacon99/terraform-training-jamfpro/tree/doc-updating/support_materials#sites)
-- [Network Segments](https://github.com/macdeacon99/terraform-training-jamfpro/tree/doc-updating/support_materials#network-segments)
-- [Configuring Self Service](https://github.com/macdeacon99/terraform-training-jamfpro/tree/doc-updating/support_materials#configuring-self-service)
-- [Deploying a Health Check Policy](https://github.com/macdeacon99/terraform-training-jamfpro/tree/doc-updating/support_materials#deploying-a-health-check-policy)
+- [Sites](https://github.com/macdeacon99/terraform-training-jamfpro/blob/doc-updating/support_materials/Section%201/Lesson%201%20-%20Infrastructure/Lesson%201%20-%20Infrastructure.md#sites)
+- [Network Segments](https://github.com/macdeacon99/terraform-training-jamfpro/blob/doc-updating/support_materials/Section%201/Lesson%201%20-%20Infrastructure/Lesson%201%20-%20Infrastructure.md#network-segments)
+- [Configuring Self Service](https://github.com/macdeacon99/terraform-training-jamfpro/blob/doc-updating/support_materials/Section%201/Lesson%201%20-%20Infrastructure/Lesson%201%20-%20Infrastructure.md#configuring-self-service)
+- [Deploying a Health Check Policy](https://github.com/macdeacon99/terraform-training-jamfpro/blob/doc-updating/support_materials/Section%201/Lesson%201%20-%20Infrastructure/Lesson%201%20-%20Infrastructure.md#configuring-self-service)
 
 For more information on any of the resources we are going to create today, you can see the full breakdown from the schema on the [Terrafrom Registry](https://registry.terraform.io/providers/deploymenttheory/jamfpro/latest/docs/resources) webpage.
 
