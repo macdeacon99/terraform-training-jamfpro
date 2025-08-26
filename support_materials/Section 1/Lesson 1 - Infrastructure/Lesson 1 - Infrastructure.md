@@ -24,7 +24,7 @@ This resource will create a 'jamfpro_site' with the unique identifier 'jamf_pro_
 
 Once you apply this run, the site will be created in the linked Jamf Pro tenant.
 
-You can see more about Sites on this [Terraform Registry](https://registry.terraform.io/providers/deploymenttheory/jamfpro/latest/docs/resources/site) webpage
+You can see more about Sites on this [Terraform Registry](https://registry.terraform.io/providers/deploymenttheory/jamfpro/latest/docs/resources/site) webpage.
 
 ### Sites - Exercise 1 - Creating a Site
 
