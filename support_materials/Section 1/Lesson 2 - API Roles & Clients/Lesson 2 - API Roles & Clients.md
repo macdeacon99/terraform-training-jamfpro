@@ -2,8 +2,8 @@
 
 In this lesson, we are going to look at the basics of creating an API Role and Client. This is useful when working on automation and wanting to create scripts that use the Jamf Pro API endpoints. This lesson will cover the following topics:
 
-- [API Roles]()
-- [API Clients]()
+- [API Roles](https://github.com/macdeacon99/terraform-training-jamfpro/blob/doc-updating/support_materials/Section%201/Lesson%202%20-%20API%20Roles%20%26%20Clients/Lesson%202%20-%20API%20Roles%20%26%20Clients.md#api-roles)
+- [API Clients](https://github.com/macdeacon99/terraform-training-jamfpro/blob/doc-updating/support_materials/Section%201/Lesson%202%20-%20API%20Roles%20%26%20Clients/Lesson%202%20-%20API%20Roles%20%26%20Clients.md#api-clients)
 
 For more information on any of the resources we are going to create today, you can see the full breakdown from the schema on the [Terrafrom Registry](https://registry.terraform.io/providers/deploymenttheory/jamfpro/latest/docs/resources) webpage.
 
@@ -51,5 +51,17 @@ Follow these steps:
 1. Create a new file in your project in the `/workload/terraform/jamfpro/` directory and name it `jamfpro_api_role.tf`
 2. Add in the API role resource mentioned above and create a role. You can change the name attribute to anything you would like.
 3. Add in some permissions that you would like, this can be anything and you can find a list on the registry webpage.
+4. Save the file
+5. Run your terraform and create the site by running the `terraform apply` command in the terminal in the `/workload/terraform/jamfpro` directory
+
+### API Clients - Exercise 2 - Creating an API Client
+
+In this exercise, you will create the above Jamf Pro API Client while pointing to the API Role that you created in the last exercise.
+
+Follow these steps:
+
+1. Create a new file in your project in the `/workload/terraform/jamfpro/` directory and name it `jamfpro_api_integration.tf`
+2. Add in the API integration resource mentioned above and create the API Client. You can change the name attribute to anything you would like.
+3. Point the 'authorization_scopes' attribute to your API role that was created in Exercise 1. This is done by pointing having the value of {name of file}.{unique name of resource}.display_name
 4. Save the file
 5. Run your terraform and create the site by running the `terraform apply` command in the terminal in the `/workload/terraform/jamfpro` directory
