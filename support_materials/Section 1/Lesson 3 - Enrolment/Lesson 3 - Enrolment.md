@@ -2,9 +2,8 @@
 
 In this lesson, we are going to look at some of the Jamf Pro settings that are configured to allow users to enroll. The point of this lesson is to show how Terraform can be used to modify the Jamf Pro settings. This lesson will cover the following topics:
 
-- [Configuring LAPS]()
-- [Configuring User-initiated Enrolment]()
-- [Modify LAPS Values]()
+- [Configuring LAPS](https://github.com/macdeacon99/terraform-training-jamfpro/blob/doc-updating/support_materials/Section%201/Lesson%203%20-%20Enrolment/Lesson%203%20-%20Enrolment.md#configuring-laps)
+- [Configuring User-initiated Enrolment](https://github.com/macdeacon99/terraform-training-jamfpro/blob/doc-updating/support_materials/Section%201/Lesson%203%20-%20Enrolment/Lesson%203%20-%20Enrolment.md#configuring-user-initiated-enrolment)
 
 For more information on any of the resources we are going to create today, you can see the full breakdown from the schema on the [Terrafrom Registry](https://registry.terraform.io/providers/deploymenttheory/jamfpro/latest/docs/resources) webpage. You will be able to find all of the Jamf Pro settings resources on here.
 
