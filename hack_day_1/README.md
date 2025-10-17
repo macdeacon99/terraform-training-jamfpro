@@ -28,6 +28,12 @@ Each team or individual will receive only:
 No other documentation, templates, or starter code will be provided.
 Your Terraform configurations, structure, and approach are entirely up to you.
 
+Each team or individual will require the following:
+
+- Development Environment (VS Code, Terraform and Git)
+- A GitHub Account
+- Completed the GitHub setup steps below
+
 **You will need to:**
 
 1. Create a local user account in your Jamf Pro tenant.
@@ -36,6 +42,22 @@ Your Terraform configurations, structure, and approach are entirely up to you.
 4. Use the Jamf Pro Terraform Provider to:
    - Import existing resources.
    - Build Terraform files that accurately describe your environment.
+
+---
+
+## GitHub Setup
+
+In order to start this Hack, you will need a copy of this repo, to ensure that you can contribute your work as a team.
+
+Follow these instructions:
+
+1. Sign in to your GitHub account
+2. One member of the team should fork this repo
+3. Each member of the team should clone this repo
+4. Each member of the team should create a branch of the repo (use the format `feat-initials`)
+5. Each member should commit to their branch
+6. Once confident in the work that has been completed, a Pull Request should be opened to contribute all the work into main
+7. One member of the team should then apply this code to the Jamf Instance / Or this will be applied by a Terraform Workspace
 
 ---
 
