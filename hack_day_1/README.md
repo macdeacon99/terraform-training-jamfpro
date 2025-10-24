@@ -61,6 +61,13 @@ Follow these instructions:
 
 ---
 
+## Good to know
+
+Things that you will need to know for this hack day are the following:
+
+- You might want to create a variable for your team name prefix to make things easier to manage in terms on naming standards.
+- ***
+
 ## 🧰 Tasks
 
 | #   | Task                         | Description                                                                                       |
@@ -71,7 +78,9 @@ Follow these instructions:
 |     | • **Categories (TBC)**       | Import all the categories into Terraform.                                                         |
 |     | • **Scripts (TBC)**          | Import and manage the scripts using Terraform.                                                    |
 |     | • **Smart & Static Groups**  | Import and define both types.                                                                     |
-|     | • **Policies (TBC)**         | Policies should use scripts, groups, and categories; relationships must be preserved.             |
 |     | • **Configuration Profiles** | Import and manage configuration profiles.                                                         |
+|     | • **Policies (TBC)**         | Policies should use scripts, groups, and categories; relationships must be preserved.             |
+|     | • **Dock Items (TBC)**       | Import and define dock items for relationships in Policies                                        |
+|     | • **Departments (TBC)**      | Import and define Departments for relationships in other resources                                |
 |     | • **Mac Apps**               | Import and represent Mac Apps appropriately.                                                      |
 | 4   | **Data Sources / Outputs**   | Add Terraform data sources and outputs for “reporting” or summarizing environment details.        |
