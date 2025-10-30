@@ -30,15 +30,15 @@ When merged and applied, Terraform updates Jamf Pro automatically.
 
 ### Key Concepts
 
-| Concept           | Description                    | Example Command                       |
-| ----------------- | ------------------------------ | ------------------------------------- |
-| Repository (repo) | A folder tracked by Git        | `git init`                            |
-| Clone             | Download a repo from GitHub    | `git clone <url>`                     |
-| Commit            | Record changes locally         | `git commit -m "message"`             |
-| Branch            | Isolated workspace for changes | `git checkout -b feature/jamf-policy` |
-| Merge             | Combine changes from branches  | `git merge feature/jamf-policy`       |
-| Push              | Upload local commits to GitHub | `git push origin main`                |
-| Pull              | Download updates from GitHub   | `git pull origin main`                |
+| Concept           | Description                                             | Example Command                       |
+| ----------------- | ------------------------------------------------------- | ------------------------------------- |
+| Repository (repo) | A repository similar to a folder or directory structure | `git init`                            |
+| Clone             | Download a repo from GitHub                             | `git clone <url>`                     |
+| Commit            | Record changes locally                                  | `git commit -m "message"`             |
+| Branch            | Isolated workspace for changes                          | `git checkout -b feature/jamf-policy` |
+| Merge             | Combine changes from branches                           | `git merge feature/jamf-policy`       |
+| Push              | Upload local commits to GitHub                          | `git push origin main`                |
+| Pull              | Download updates from GitHub                            | `git pull origin main`                |
 
 ### 🧠 How Git Works
 
@@ -105,7 +105,7 @@ Example repository structure for Jamf Terraform:
 ├── variables.tf
 ├── outputs.tf
 ├── modules/
-│   └── jamf_policy/
+│   └── workload/
 │       ├── main.tf
 │       ├── variables.tf
 │       └── outputs.tf
