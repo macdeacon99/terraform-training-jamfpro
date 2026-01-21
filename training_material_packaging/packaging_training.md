@@ -1151,7 +1151,7 @@ git add .
 **Goal:** Add a new script to Jamf Pro via Terraform
 
 **Steps:**
-1. Create branch: `feature/add-hello-world`
+1. Create branch: `feat/add-hello-world`
 2. Create script file: `scripts/Hello_World.sh`
    ```bash
    #!/bin/bash
@@ -1168,7 +1168,7 @@ git add .
      os_requirements = ""
    }
    ```
-4. Commit with message: `feat(scripts): add hello world test script`
+4. Commit with message: `feat: add hello world test script`
 5. Push and create PR
 6. Request review
 
@@ -1177,4 +1177,207 @@ git add .
 **Goal:** Add a new category for organizing resources
 
 **Steps:**
-1. Create branch: `feature/add-training-category`
+1. Create branch: `feat/add-training-category`
+2. Edit `jamfpro_categories.tf`
+3. Add: `"Training Scripts" = 9`
+4. Commit: `feat: add Training Scripts category`
+5. Push and create PR
+
+### Exercise 3: Create a Smart Group
+
+**Goal:** Create a group of devices missing an application
+
+**Steps:**
+1. Create branch: `feat/add-missing-excel-group`
+2. Edit `jamfpro_smart_groups_data.tf`
+3. Add group with ID 999 (placeholder) and criteria for devices without Excel
+4. Commit: `feat: add smart group for devices missing Excel`
+5. Push and create PR
+
+### Exercise 4: Full Workflow Practice
+
+**Goal:** Complete end-to-end change
+
+**Scenario:** Add a new monitoring script with its own category
+
+**Steps:**
+1. Create feature branch
+2. Add "System Monitoring" category
+3. Create monitoring script file
+4. Add script configuration referencing new category
+5. Stage all changes
+6. Write proper conventional commit
+7. Push to GitHub
+8. Create PR with good description
+9. Request review from instructor
+10. Address any feedback
+11. Merge when approved
+
+---
+
+## Module 17: Quick Reference Guide
+
+### Git Commands Cheat Sheet
+
+```bash
+# Setup
+git config --global user.name "Your Name"
+git config --global user.email "your.email@company.com"
+
+# Daily workflow
+git status                          # Check status
+git checkout -b feature/branch-name # Create new branch
+git add .                           # Stage all changes
+git commit -m "feat: description"   # Commit changes
+git push -u origin feature/branch   # Push new branch
+git push                            # Push to existing branch
+
+# Keeping updated
+git checkout main                   # Switch to main
+git pull                            # Update from GitHub
+git checkout your-branch            # Back to your branch
+git merge main                      # Merge updates
+
+# Viewing history
+git log                             # View commits
+git diff                            # View changes
+git show                            # View last commit
+```
+
+### Conventional Commit Template
+
+```
+<type>(<scope>): <short description>
+
+<longer description if needed>
+
+<footer if needed>
+```
+
+**Types:** feat, fix, docs, chore
+
+### Terraform File Locations
+
+| Resource | Data File | Resource File |
+|----------|-----------|---------------|
+| Categories | Same file | `jamfpro_categories.tf` |
+| Scripts | `jamfpro_scripts_data.tf` | `jamfpro_scripts.tf` |
+| Smart Groups | `jamfpro_smart_groups_data.tf` | `jamfpro_smart_groups.tf` |
+| Static Groups | `jamfpro_static_groups_data.tf` | `jamfpro_static_groups.tf` |
+| Extension Attributes | Same file | `jamfpro_extension_attributes.tf` |
+| API Roles | Same file | `jamfpro_api_roles.tf` |
+| API Integrations | Same file | `jamfpro_api_integrations.tf` |
+
+### Common Values Reference
+
+**Category Priorities:**
+- `1` - Highest priority (Sys Admin Tools)
+- `2-3` - High priority (Security, Self Help)
+- `9` - Standard priority (most categories)
+- `10` - Special categories (Self Service+)
+- `20` - Fixes
+
+**Script Priority:**
+- `BEFORE` - Run before reboot
+- `AFTER` - Run after reboot (most common)
+
+**Data Types:**
+- `STRING` - Text values
+- `INTEGER` - Numbers
+- `DATE` - Date values
+
+**Search Types (Groups):**
+- `is` / `is not`
+- `like` / `not like`
+- `has` / `does not have`
+- `greater than` / `less than`
+- `matches regex`
+
+---
+
+## Appendix A: Glossary
+
+**API (Application Programming Interface)**: A way for programs to communicate with Jamf Pro automatically
+
+**Branch**: A parallel version of code for working on changes independently
+
+**Commit**: A saved snapshot of changes with a description
+
+**Conventional Commits**: A standard format for commit messages
+
+**Extension Attribute**: Custom data fields added to Jamf Pro inventory
+
+**Fork**: A personal copy of a repository (not used in our workflow)
+
+**Git**: Version control software for tracking code changes
+
+**GitHub**: Cloud platform for hosting Git repositories
+
+**GitOps**: Managing infrastructure through Git workflows
+
+**IaC (Infrastructure as Code)**: Managing infrastructure through code files
+
+**Jamf Pro**: Our Mac device management system
+
+**Merge**: Combining changes from one branch into another
+
+**PR (Pull Request)**: A request to merge changes into the main codebase
+
+**Repository (Repo)**: A project folder tracked by Git
+
+**Semantic Versioning**: Version numbering system (MAJOR.MINOR.PATCH)
+
+**Smart Group**: Jamf group with automatic membership based on criteria
+
+**Static Group**: Jamf group with manual membership
+
+**Terraform**: Infrastructure as Code tool we use
+
+**Version Control**: System for tracking changes to code over time
+
+---
+
+## Appendix B: Additional Resources
+
+### Internal Documentation
+- Jamf Pro Admin Guide: [internal link]
+- Team Confluence Page: [internal link]
+- Script Library: `scripts/` directory
+
+### External Resources
+- [Git Official Documentation](https://git-scm.com/doc)
+- [GitHub Guides](https://guides.github.com/)
+- [Conventional Commits](https://www.conventionalcommits.org/)
+- [Terraform Documentation](https://www.terraform.io/docs)
+- [Jamf Pro API Documentation](https://developer.jamf.com/)
+- [Terraform Registry](https://registry.terraform.io/providers/deploymenttheory/jamfpro/latest/docs)
+
+### Training Videos
+- Git Basics for Beginners (YouTube)
+- Terraform Fundamentals (HashiCorp Learn)
+- Pull Request Best Practices (GitHub Skills)
+
+### Practice Environments
+- Jamf Pro Sandbox: [internal link]
+- Test Git Repository: [internal link]
+
+---
+
+## Next Steps
+
+After completing this training:
+
+1. **Practice the workflows** with simple changes
+2. **Shadow a team member** on their next PR
+3. **Complete the hands-on exercises** with instructor support
+4. **Make your first real change** (with guidance)
+5. **Join code review rotation** after 2-3 successful PRs
+6. **Share knowledge** with newer team members
+
+**Remember:** Everyone makes mistakes when learning. Don't hesitate to ask questions!
+
+---
+
+**Training Version:** 1.0  
+**Last Updated:** January 2026  
+**Maintained By:** Platform Engineering Team & Mac Engineering Team
